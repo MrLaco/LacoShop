@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EAD06502-6793-40A2-A3A1-DD5A41143789"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB4BB64E-499B-4ED1-A33C-3CDB8C97E611"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LacoShop/Views/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB4BB64E-499B-4ED1-A33C-3CDB8C97E611 - 416b2f0813d0074"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "DB4BB64E-499B-4ED1-A33C-3CDB8C97E611 - 416b2f0813d0074"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52A3B5A7-AC71-4DD6-A98E-4E44DD084348"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LacoShop/Views/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52A3B5A7-AC71-4DD6-A98E-4E44DD084348 - 416b2f0813d0036"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "52A3B5A7-AC71-4DD6-A98E-4E44DD084348 - 416b2f0813d0074"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "52A3B5A7-AC71-4DD6-A98E-4E44DD084348 - 416b2f0813d0015"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68E1C154-C049-498E-AD3E-D02FC35027EA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LacoShop/Views/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68E1C154-C049-498E-AD3E-D02FC35027EA - 8fe8661cf040655e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "1892">
+               </Location>
+               <Location
+                  uuid = "68E1C154-C049-498E-AD3E-D02FC35027EA - 8fe8661cf0406518"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "68E1C154-C049-498E-AD3E-D02FC35027EA - 8fe8661cf0406431"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7783678E-F5BA-4733-9C4E-7C7441A25C02"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LacoShop/Views/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7783678E-F5BA-4733-9C4E-7C7441A25C02 - 8fe8661cf0406594"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "948">
+               </Location>
+               <Location
+                  uuid = "7783678E-F5BA-4733-9C4E-7C7441A25C02 - b014dcd6d97a2802"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "7783678E-F5BA-4733-9C4E-7C7441A25C02 - 8fe8661cf0406594"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  uuid = "7783678E-F5BA-4733-9C4E-7C7441A25C02 - 8fe8661cf04064ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "648">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CF1C911-B6E4-4395-A725-C1F8C82FB597"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LacoShop/Views/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "loadAdverts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CF1C911-B6E4-4395-A725-C1F8C82FB597 - 8697c2fea4463371"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.loadAdverts() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "4CF1C911-B6E4-4395-A725-C1F8C82FB597 - 8697c2fea4463068"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoShop.MainPageViewController.loadAdverts() -&gt; ()"
+                  moduleName = "LacoShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoShop/LacoShop/LacoShop/Views/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

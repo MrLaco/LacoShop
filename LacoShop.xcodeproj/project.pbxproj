@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5475BAF42A97F2730056E3A7 /* AdvertDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475BAF32A97F2730056E3A7 /* AdvertDetailsViewController.swift */; };
 		54C6585E2A97856400E6A572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C6585D2A97856400E6A572 /* AppDelegate.swift */; };
 		54C658602A97856400E6A572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C6585F2A97856400E6A572 /* SceneDelegate.swift */; };
 		54C658622A97856400E6A572 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C658612A97856400E6A572 /* MainPageViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5475BAF32A97F2730056E3A7 /* AdvertDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertDetailsViewController.swift; sourceTree = "<group>"; };
 		54C6585A2A97856400E6A572 /* LacoShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LacoShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C6585D2A97856400E6A572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C6585F2A97856400E6A572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				54C6587D2A978E0200E6A572 /* Cells */,
 				54C658612A97856400E6A572 /* MainPageViewController.swift */,
+				5475BAF32A97F2730056E3A7 /* AdvertDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				54C658562A97856400E6A572 /* Sources */,
 				54C658572A97856400E6A572 /* Frameworks */,
 				54C658582A97856400E6A572 /* Resources */,
+				5475BAF52A98BADB0056E3A7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -212,6 +216,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5475BAF52A98BADB0056E3A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54C658562A97856400E6A572 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +245,7 @@
 				54C658622A97856400E6A572 /* MainPageViewController.swift in Sources */,
 				54C6585E2A97856400E6A572 /* AppDelegate.swift in Sources */,
 				54C6587F2A978E3A00E6A572 /* AdvertCell.swift in Sources */,
+				5475BAF42A97F2730056E3A7 /* AdvertDetailsViewController.swift in Sources */,
 				54C658852A97D96500E6A572 /* ImageCacheManager.swift in Sources */,
 				54C658812A97A87900E6A572 /* NetworkingService.swift in Sources */,
 				54C658602A97856400E6A572 /* SceneDelegate.swift in Sources */,

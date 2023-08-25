@@ -22,10 +22,6 @@ class MainPageViewController: UIViewController {
 
         loadAdverts()
 
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-
-        collectionView.register(AdvertCell.self, forCellWithReuseIdentifier: "AdvertCell")
-
         setupUI()
         setupConstraints()
     }
@@ -41,6 +37,7 @@ class MainPageViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .white
+        collectionView.register(AdvertCell.self, forCellWithReuseIdentifier: "AdvertCell")
 
         return collectionView
     }()
@@ -65,8 +62,6 @@ class MainPageViewController: UIViewController {
     // MARK: - Data
 
     private func loadAdverts() {
-        #warning("Показывать лоадер в этот момент!")
-
         NetworkingService.shared.fetchAdverts { result in
             switch result {
             case .success(let adverts):
@@ -75,7 +70,15 @@ class MainPageViewController: UIViewController {
                     self.collectionView.reloadData()
                 }
             case .failure(let error):
-                print("Error: \(error)")
+                print("Ошибка: \(error)")
+
+                let alertVC = UIAlertController(
+                    title: "Ошибка!",
+                    message: "Не удалось загрузить данные с сервера =(",
+                    preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default)
+                alertVC.addAction(okAction)
+                self.present(alertVC, animated: true)
             }
         }
         self.collectionView.reloadData()
@@ -85,7 +88,11 @@ class MainPageViewController: UIViewController {
 // MARK: - UICollectionViewDelegate
 
 extension MainPageViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
 
         let width = view.frame.width
         let numberOfColumns: CGFloat = 2
@@ -94,21 +101,53 @@ extension MainPageViewController: UICollectionViewDelegateFlowLayout {
         let itemWidth = (width - 3 * itemSpacing) / numberOfColumns
         return CGSize(width: itemWidth, height: itemWidth * 1.5)
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let advertId = adverts[indexPath.item].id
+
+        NetworkingService.shared.fetchAdvertDetails(for: advertId) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let advertDetails):
+                    let advertDetailsVC = AdvertDetailsViewController()
+                    advertDetailsVC.advertDetails = advertDetails
+                    self.present(advertDetailsVC, animated: true)
+                case .failure(let error):
+                    print("Ошибка: \(error)")
+
+                    let alertVC = UIAlertController(
+                        title: "Ошибка!",
+                        message: "Не удалось загрузить данные с сервера =(",
+                        preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default)
+                    alertVC.addAction(okAction)
+                    self.present(alertVC, animated: true)
+                }
+            }
+        }
+    }
 }
 
 // MARK: - UICollectionViewDataSource
 
 extension MainPageViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
         adverts.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
         guard
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdvertCell", for: indexPath) as? AdvertCell
+            let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: "AdvertCell", for: indexPath
+            ) as? AdvertCell
         else { return UICollectionViewCell() }
 
-        #warning("Выкидывать ошибку, что объявления ещё не загружены")
         let advert = adverts[indexPath.item]
 
         if let cachedImage = ImageCacheManager.shared.image(forKey: advert.imageUrl) {
@@ -120,9 +159,7 @@ extension MainPageViewController: UICollectionViewDataSource {
             cell.activityIndicator.startAnimating()
 
             NetworkingService.shared.loadImage(from: advert.imageUrl) { image in
-                DispatchQueue.main.async { [weak self] in
-                    guard let self else { return }
-
+                DispatchQueue.main.async {
                     if let currentIndexPath = collectionView.indexPath(for: cell), currentIndexPath == indexPath {
                         if let image {
                             cell.advertImageView.image = image
@@ -145,13 +182,19 @@ extension MainPageViewController: UICollectionViewDataSource {
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        insetForSectionAt section: Int
+    ) -> UIEdgeInsets {
         return UIEdgeInsets(top: 16, left: 16, bottom: 20, right: 16)
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        minimumInteritemSpacingForSectionAt section: Int
+    ) -> CGFloat {
         16
     }
 }
-
-

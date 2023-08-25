@@ -22,4 +22,3 @@ class ImageCacheManager {
         return cache.object(forKey: key as NSString)
     }
 }
-
